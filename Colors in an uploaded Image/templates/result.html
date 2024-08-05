@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Analysis Result</title>
+</head>
+<body>
+    <h1>Color Analysis Result</h1>
+    {% for color, count in colors %}
+        <div style="background-color: rgb({{ color[0] }}, {{ color[1] }}, {{ color[2] }}); height: 50px; width: 50px;"></div>
+        {{ count }} occurrences<br>
+    {% endfor %}
+</body>
+</html>

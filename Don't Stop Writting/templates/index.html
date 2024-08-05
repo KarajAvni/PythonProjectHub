@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Text App</title>
+</head>
+<body>
+    <form method="post" action="/">
+        <textarea name="text" placeholder="Type something...">{{ text }}</textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if text %}
+        <p>Last submitted text:</p>
+        <p>{{ text }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes for Remote Working</title>
+</head>
+<body>
+    <h1>Cafes for Remote Working</h1>
+    <form action="/" method="post">
+        <input type="text" name="new_cafe" placeholder="Add a new cafe...">
+        <input type="submit" value="Add Cafe">
+    </form>
+    <ul>
+        {% for cafe in cafes %}
+            <li>{{ cafe.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
